@@ -1,0 +1,1842 @@
+{
+  "config": {
+    "filter": [
+      {
+        "isAllcheck": true,
+        "isSelected": false,
+        "items": [
+          {
+            "index": 1,
+            "isSelected": true,
+            "value": "三明区"
+          },
+          {
+            "index": 20,
+            "isSelected": true,
+            "value": "浙江二区"
+          },
+          {
+            "index": 21,
+            "isSelected": true,
+            "value": "漳州区"
+          },
+          {
+            "index": 22,
+            "isSelected": true,
+            "value": "福州东区"
+          },
+          {
+            "index": 23,
+            "isSelected": true,
+            "value": "福州中区"
+          },
+          {
+            "index": 24,
+            "isSelected": true,
+            "value": "福州北区"
+          },
+          {
+            "index": 25,
+            "isSelected": true,
+            "value": "福州南区"
+          },
+          {
+            "index": 26,
+            "isSelected": true,
+            "value": "福州西区"
+          },
+          {
+            "index": 27,
+            "isSelected": true,
+            "value": "苏北区"
+          },
+          {
+            "index": 28,
+            "isSelected": true,
+            "value": "苏南区"
+          },
+          {
+            "index": 29,
+            "isSelected": true,
+            "value": "莆田区"
+          },
+          {
+            "index": 30,
+            "isSelected": true,
+            "value": "西安区"
+          },
+          {
+            "index": 31,
+            "isSelected": true,
+            "value": "贵州区"
+          },
+          {
+            "index": 32,
+            "isSelected": true,
+            "value": "辽宁区"
+          },
+          {
+            "index": 33,
+            "isSelected": true,
+            "value": "重庆区"
+          },
+          {
+            "index": 34,
+            "isSelected": true,
+            "value": "长宁区"
+          },
+          {
+            "index": 19,
+            "isSelected": true,
+            "value": "浙江一区"
+          },
+          {
+            "index": 18,
+            "isSelected": true,
+            "value": "泉州区"
+          },
+          {
+            "index": 17,
+            "isSelected": true,
+            "value": "河南区"
+          },
+          {
+            "index": 2,
+            "isSelected": true,
+            "value": "上海区"
+          },
+          {
+            "index": 3,
+            "isSelected": true,
+            "value": "北京东一区"
+          },
+          {
+            "index": 4,
+            "isSelected": true,
+            "value": "北京东二区"
+          },
+          {
+            "index": 5,
+            "isSelected": true,
+            "value": "北京西一区"
+          },
+          {
+            "index": 6,
+            "isSelected": true,
+            "value": "北京西二区"
+          },
+          {
+            "index": 7,
+            "isSelected": true,
+            "value": "南京区"
+          },
+          {
+            "index": 8,
+            "isSelected": true,
+            "value": "南平区"
+          },
+          {
+            "index": 9,
+            "isSelected": true,
+            "value": "厦门区"
+          },
+          {
+            "index": 10,
+            "isSelected": true,
+            "value": "吉林区"
+          },
+          {
+            "index": 11,
+            "isSelected": true,
+            "value": "四川区"
+          },
+          {
+            "index": 12,
+            "isSelected": true,
+            "value": "天津区"
+          },
+          {
+            "index": 13,
+            "isSelected": true,
+            "value": "太原区"
+          },
+          {
+            "index": 14,
+            "isSelected": true,
+            "value": "安徽区"
+          },
+          {
+            "index": 15,
+            "isSelected": true,
+            "value": "广东区"
+          },
+          {
+            "index": 16,
+            "isSelected": true,
+            "value": "河北区"
+          },
+          {
+            "index": 35,
+            "isSelected": true,
+            "value": "黑龙江区"
+          }
+        ],
+        "name": "大区"
+      },
+      {
+        "isAllcheck": true,
+        "isSelected": false,
+        "items": [
+          {
+            "index": 1,
+            "isSelected": true,
+            "value": "SM广场店"
+          },
+          {
+            "index": 2,
+            "isSelected": true,
+            "value": "万科金域国际店"
+          },
+          {
+            "index": 3,
+            "isSelected": true,
+            "value": "万豪天悦店"
+          },
+          {
+            "index": 4,
+            "isSelected": true,
+            "value": "万达文旅城店"
+          },
+          {
+            "index": 5,
+            "isSelected": true,
+            "value": "三明万达广场店"
+          },
+          {
+            "index": 6,
+            "isSelected": true,
+            "value": "三明鸿图店"
+          },
+          {
+            "index": 7,
+            "isSelected": true,
+            "value": "上渡店"
+          },
+          {
+            "index": 8,
+            "isSelected": true,
+            "value": "上虞万达广场店"
+          },
+          {
+            "index": 9,
+            "isSelected": true,
+            "value": "世界村店"
+          },
+          {
+            "index": 10,
+            "isSelected": true,
+            "value": "东城万达店"
+          },
+          {
+            "index": 11,
+            "isSelected": true,
+            "value": "东方伟业广场店"
+          },
+          {
+            "index": 12,
+            "isSelected": true,
+            "value": "东方名城店"
+          },
+          {
+            "index": 13,
+            "isSelected": true,
+            "value": "东溪店"
+          },
+          {
+            "index": 14,
+            "isSelected": true,
+            "value": "中信悦方店"
+          },
+          {
+            "index": 15,
+            "isSelected": true,
+            "value": "中南城店"
+          },
+          {
+            "index": 16,
+            "isSelected": true,
+            "value": "中环店"
+          },
+          {
+            "index": 17,
+            "isSelected": true,
+            "value": "中铁国际店"
+          },
+          {
+            "index": 18,
+            "isSelected": true,
+            "value": "中骏世界城店"
+          },
+          {
+            "index": 19,
+            "isSelected": true,
+            "value": "丰科万达店"
+          },
+          {
+            "index": 20,
+            "isSelected": true,
+            "value": "临河街店"
+          },
+          {
+            "index": 21,
+            "isSelected": true,
+            "value": "五四北店"
+          },
+          {
+            "index": 22,
+            "isSelected": true,
+            "value": "五四店"
+          },
+          {
+            "index": 23,
+            "isSelected": true,
+            "value": "五洲店"
+          },
+          {
+            "index": 24,
+            "isSelected": true,
+            "value": "五缘湾店"
+          },
+          {
+            "index": 25,
+            "isSelected": true,
+            "value": "井楼门店"
+          },
+          {
+            "index": 26,
+            "isSelected": true,
+            "value": "亚乐城店"
+          },
+          {
+            "index": 27,
+            "isSelected": true,
+            "value": "体育公园店"
+          },
+          {
+            "index": 28,
+            "isSelected": true,
+            "value": "佳禾馨苑店"
+          },
+          {
+            "index": 29,
+            "isSelected": true,
+            "value": "公园道店"
+          },
+          {
+            "index": 30,
+            "isSelected": true,
+            "value": "六里桥店"
+          },
+          {
+            "index": 31,
+            "isSelected": true,
+            "value": "兴华路店"
+          },
+          {
+            "index": 32,
+            "isSelected": true,
+            "value": "兴南店"
+          },
+          {
+            "index": 33,
+            "isSelected": true,
+            "value": "凯德天府店"
+          },
+          {
+            "index": 34,
+            "isSelected": true,
+            "value": "凯德天津湾店"
+          },
+          {
+            "index": 35,
+            "isSelected": true,
+            "value": "前屿店"
+          },
+          {
+            "index": 36,
+            "isSelected": true,
+            "value": "北一路万达店"
+          },
+          {
+            "index": 37,
+            "isSelected": true,
+            "value": "北城天街店"
+          },
+          {
+            "index": 38,
+            "isSelected": true,
+            "value": "千禧街店"
+          },
+          {
+            "index": 39,
+            "isSelected": true,
+            "value": "半壁店"
+          },
+          {
+            "index": 40,
+            "isSelected": true,
+            "value": "华府景城店"
+          },
+          {
+            "index": 41,
+            "isSelected": true,
+            "value": "华林店"
+          },
+          {
+            "index": 42,
+            "isSelected": true,
+            "value": "南关正街店"
+          },
+          {
+            "index": 43,
+            "isSelected": true,
+            "value": "南坪万达广场店"
+          },
+          {
+            "index": 44,
+            "isSelected": true,
+            "value": "南山茂业店"
+          },
+          {
+            "index": 45,
+            "isSelected": true,
+            "value": "南屿正荣店"
+          },
+          {
+            "index": 46,
+            "isSelected": true,
+            "value": "南沙万达店"
+          },
+          {
+            "index": 47,
+            "isSelected": true,
+            "value": "厚街万达店"
+          },
+          {
+            "index": 48,
+            "isSelected": true,
+            "value": "双桥店"
+          },
+          {
+            "index": 49,
+            "isSelected": true,
+            "value": "双街店"
+          },
+          {
+            "index": 50,
+            "isSelected": true,
+            "value": "后沙峪店"
+          },
+          {
+            "index": 51,
+            "isSelected": true,
+            "value": "吴中万达店"
+          },
+          {
+            "index": 52,
+            "isSelected": true,
+            "value": "吴泾嘉怡水岸店"
+          },
+          {
+            "index": 53,
+            "isSelected": true,
+            "value": "吴航店"
+          },
+          {
+            "index": 54,
+            "isSelected": true,
+            "value": "吾悦广场店"
+          },
+          {
+            "index": 55,
+            "isSelected": true,
+            "value": "哈西万达店"
+          },
+          {
+            "index": 56,
+            "isSelected": true,
+            "value": "商贸城店"
+          },
+          {
+            "index": 57,
+            "isSelected": true,
+            "value": "喜隆多店"
+          },
+          {
+            "index": 58,
+            "isSelected": true,
+            "value": "嘉兴旭辉广场店"
+          },
+          {
+            "index": 59,
+            "isSelected": true,
+            "value": "嘉定大融城店"
+          },
+          {
+            "index": 60,
+            "isSelected": true,
+            "value": "嘉定宝龙店"
+          },
+          {
+            "index": 61,
+            "isSelected": true,
+            "value": "回龙观店"
+          },
+          {
+            "index": 62,
+            "isSelected": true,
+            "value": "国棉店"
+          },
+          {
+            "index": 63,
+            "isSelected": true,
+            "value": "坂东店"
+          },
+          {
+            "index": 64,
+            "isSelected": true,
+            "value": "垡头店"
+          },
+          {
+            "index": 65,
+            "isSelected": true,
+            "value": "城涵东店"
+          },
+          {
+            "index": 66,
+            "isSelected": true,
+            "value": "增光路店"
+          },
+          {
+            "index": 67,
+            "isSelected": true,
+            "value": "大世界购物中心店"
+          },
+          {
+            "index": 68,
+            "isSelected": true,
+            "value": "大儒世家店"
+          },
+          {
+            "index": 69,
+            "isSelected": true,
+            "value": "大兴康庄店"
+          },
+          {
+            "index": 70,
+            "isSelected": true,
+            "value": "大坪协信店"
+          },
+          {
+            "index": 71,
+            "isSelected": true,
+            "value": "大学城店"
+          },
+          {
+            "index": 72,
+            "isSelected": true,
+            "value": "大庆毅滕店"
+          },
+          {
+            "index": 73,
+            "isSelected": true,
+            "value": "天博广场店"
+          },
+          {
+            "index": 74,
+            "isSelected": true,
+            "value": "天嘉店"
+          },
+          {
+            "index": 75,
+            "isSelected": true,
+            "value": "天津大港店"
+          },
+          {
+            "index": 76,
+            "isSelected": true,
+            "value": "天鹅湖万达店"
+          },
+          {
+            "index": 77,
+            "isSelected": true,
+            "value": "太仓万达店"
+          },
+          {
+            "index": 78,
+            "isSelected": true,
+            "value": "太原万达店"
+          },
+          {
+            "index": 79,
+            "isSelected": true,
+            "value": "太康店"
+          },
+          {
+            "index": 80,
+            "isSelected": true,
+            "value": "太阳宫店"
+          },
+          {
+            "index": 81,
+            "isSelected": true,
+            "value": "奥体中心广场店"
+          },
+          {
+            "index": 82,
+            "isSelected": true,
+            "value": "季华店"
+          },
+          {
+            "index": 83,
+            "isSelected": true,
+            "value": "学府宝龙店"
+          },
+          {
+            "index": 84,
+            "isSelected": true,
+            "value": "宝安大道店"
+          },
+          {
+            "index": 85,
+            "isSelected": true,
+            "value": "宽城万达店"
+          },
+          {
+            "index": 86,
+            "isSelected": true,
+            "value": "居住主题公园店"
+          },
+          {
+            "index": 87,
+            "isSelected": true,
+            "value": "屏山店"
+          },
+          {
+            "index": 88,
+            "isSelected": true,
+            "value": "屏西店"
+          },
+          {
+            "index": 89,
+            "isSelected": true,
+            "value": "山水文园店"
+          },
+          {
+            "index": 90,
+            "isSelected": true,
+            "value": "岳峰店"
+          },
+          {
+            "index": 91,
+            "isSelected": true,
+            "value": "巴南万达店"
+          },
+          {
+            "index": 92,
+            "isSelected": true,
+            "value": "常熟百盛店"
+          },
+          {
+            "index": 93,
+            "isSelected": true,
+            "value": "平宁路店"
+          },
+          {
+            "index": 94,
+            "isSelected": true,
+            "value": "平阳万达店"
+          },
+          {
+            "index": 95,
+            "isSelected": true,
+            "value": "康乐店"
+          },
+          {
+            "index": 96,
+            "isSelected": true,
+            "value": "建华万达店"
+          },
+          {
+            "index": 97,
+            "isSelected": true,
+            "value": "建设南路店"
+          },
+          {
+            "index": 98,
+            "isSelected": true,
+            "value": "建贸店"
+          },
+          {
+            "index": 99,
+            "isSelected": true,
+            "value": "建阳金都店"
+          },
+          {
+            "index": 100,
+            "isSelected": true,
+            "value": "思东店"
+          },
+          {
+            "index": 101,
+            "isSelected": true,
+            "value": "思唐财富广场店"
+          },
+          {
+            "index": 102,
+            "isSelected": true,
+            "value": "恒基店"
+          },
+          {
+            "index": 103,
+            "isSelected": true,
+            "value": "惠安禹州店"
+          },
+          {
+            "index": 104,
+            "isSelected": true,
+            "value": "慈溪店"
+          },
+          {
+            "index": 105,
+            "isSelected": true,
+            "value": "成都电视塔店"
+          },
+          {
+            "index": 106,
+            "isSelected": true,
+            "value": "扬州宝龙店"
+          },
+          {
+            "index": 107,
+            "isSelected": true,
+            "value": "振兴店"
+          },
+          {
+            "index": 108,
+            "isSelected": true,
+            "value": "政和大道万达店"
+          },
+          {
+            "index": 109,
+            "isSelected": true,
+            "value": "文慧园店"
+          },
+          {
+            "index": 110,
+            "isSelected": true,
+            "value": "新世界店"
+          },
+          {
+            "index": 111,
+            "isSelected": true,
+            "value": "新华店"
+          },
+          {
+            "index": 112,
+            "isSelected": true,
+            "value": "新天宇广场店"
+          },
+          {
+            "index": 113,
+            "isSelected": true,
+            "value": "新纪元广场店"
+          },
+          {
+            "index": 114,
+            "isSelected": true,
+            "value": "新阳店"
+          },
+          {
+            "index": 115,
+            "isSelected": true,
+            "value": "日照东门店"
+          },
+          {
+            "index": 116,
+            "isSelected": true,
+            "value": "旧宫万科店"
+          },
+          {
+            "index": 117,
+            "isSelected": true,
+            "value": "旧宫店"
+          },
+          {
+            "index": 118,
+            "isSelected": true,
+            "value": "昆山弥敦城店"
+          },
+          {
+            "index": 119,
+            "isSelected": true,
+            "value": "昙石山店"
+          },
+          {
+            "index": 120,
+            "isSelected": true,
+            "value": "星光耀广场店"
+          },
+          {
+            "index": 121,
+            "isSelected": true,
+            "value": "晋江万达广场店"
+          },
+          {
+            "index": 122,
+            "isSelected": true,
+            "value": "曲江池东路店"
+          },
+          {
+            "index": 123,
+            "isSelected": true,
+            "value": "曲江龙湖店"
+          },
+          {
+            "index": 124,
+            "isSelected": true,
+            "value": "望京西路店"
+          },
+          {
+            "index": 125,
+            "isSelected": true,
+            "value": "杏林万科店"
+          },
+          {
+            "index": 126,
+            "isSelected": true,
+            "value": "杭新店"
+          },
+          {
+            "index": 127,
+            "isSelected": true,
+            "value": "松城店"
+          },
+          {
+            "index": 128,
+            "isSelected": true,
+            "value": "松江万达店"
+          },
+          {
+            "index": 129,
+            "isSelected": true,
+            "value": "枫桥路店"
+          },
+          {
+            "index": 130,
+            "isSelected": true,
+            "value": "桃源路店"
+          },
+          {
+            "index": 131,
+            "isSelected": true,
+            "value": "槐房万达广场店"
+          },
+          {
+            "index": 132,
+            "isSelected": true,
+            "value": "正荣时代店"
+          },
+          {
+            "index": 133,
+            "isSelected": true,
+            "value": "正荣财富中心店"
+          },
+          {
+            "index": 134,
+            "isSelected": true,
+            "value": "步行街店"
+          },
+          {
+            "index": 135,
+            "isSelected": true,
+            "value": "武清大光明店"
+          },
+          {
+            "index": 136,
+            "isSelected": true,
+            "value": "武进万达店"
+          },
+          {
+            "index": 137,
+            "isSelected": true,
+            "value": "水头店"
+          },
+          {
+            "index": 138,
+            "isSelected": true,
+            "value": "汇珑新天地店"
+          },
+          {
+            "index": 139,
+            "isSelected": true,
+            "value": "汇达店"
+          },
+          {
+            "index": 140,
+            "isSelected": true,
+            "value": "江北万达店"
+          },
+          {
+            "index": 141,
+            "isSelected": true,
+            "value": "江北生活广场店"
+          },
+          {
+            "index": 142,
+            "isSelected": true,
+            "value": "江南水都店"
+          },
+          {
+            "index": 143,
+            "isSelected": true,
+            "value": "江宁万达店"
+          },
+          {
+            "index": 144,
+            "isSelected": true,
+            "value": "汪河路店"
+          },
+          {
+            "index": 145,
+            "isSelected": true,
+            "value": "沙井市民广场店"
+          },
+          {
+            "index": 146,
+            "isSelected": true,
+            "value": "沙湾凯德广场店"
+          },
+          {
+            "index": 147,
+            "isSelected": true,
+            "value": "泉港永嘉店"
+          },
+          {
+            "index": 148,
+            "isSelected": true,
+            "value": "泉秀店"
+          },
+          {
+            "index": 149,
+            "isSelected": true,
+            "value": "泰禾城市广场店"
+          },
+          {
+            "index": 150,
+            "isSelected": true,
+            "value": "泸州万象汇店"
+          },
+          {
+            "index": 151,
+            "isSelected": true,
+            "value": "津泰店"
+          },
+          {
+            "index": 152,
+            "isSelected": true,
+            "value": "浦新店"
+          },
+          {
+            "index": 153,
+            "isSelected": true,
+            "value": "浮桥店"
+          },
+          {
+            "index": 154,
+            "isSelected": true,
+            "value": "海天店"
+          },
+          {
+            "index": 155,
+            "isSelected": true,
+            "value": "海昌路店"
+          },
+          {
+            "index": 156,
+            "isSelected": true,
+            "value": "淮安承德店"
+          },
+          {
+            "index": 157,
+            "isSelected": true,
+            "value": "深圳卓悦汇店"
+          },
+          {
+            "index": 158,
+            "isSelected": true,
+            "value": "深圳平湖店"
+          },
+          {
+            "index": 159,
+            "isSelected": true,
+            "value": "深圳沙井店"
+          },
+          {
+            "index": 160,
+            "isSelected": true,
+            "value": "清扬路店"
+          },
+          {
+            "index": 161,
+            "isSelected": true,
+            "value": "清河店"
+          },
+          {
+            "index": 162,
+            "isSelected": true,
+            "value": "温都水城广场店"
+          },
+          {
+            "index": 163,
+            "isSelected": true,
+            "value": "滨江嘉苑店"
+          },
+          {
+            "index": 164,
+            "isSelected": true,
+            "value": "滨江宝龙店"
+          },
+          {
+            "index": 165,
+            "isSelected": true,
+            "value": "滨江新城店"
+          },
+          {
+            "index": 166,
+            "isSelected": true,
+            "value": "滨江金榕店"
+          },
+          {
+            "index": 167,
+            "isSelected": true,
+            "value": "漳州万达店"
+          },
+          {
+            "index": 168,
+            "isSelected": true,
+            "value": "漳浦龙湖店"
+          },
+          {
+            "index": 169,
+            "isSelected": true,
+            "value": "熙悦汇店"
+          },
+          {
+            "index": 170,
+            "isSelected": true,
+            "value": "爱琴海店"
+          },
+          {
+            "index": 171,
+            "isSelected": true,
+            "value": "爱琴海购物中心店"
+          },
+          {
+            "index": 172,
+            "isSelected": true,
+            "value": "现代城店"
+          },
+          {
+            "index": 173,
+            "isSelected": true,
+            "value": "琅岐店"
+          },
+          {
+            "index": 174,
+            "isSelected": true,
+            "value": "瑶海万达店"
+          },
+          {
+            "index": 175,
+            "isSelected": true,
+            "value": "瓯海大道银泰店"
+          },
+          {
+            "index": 176,
+            "isSelected": true,
+            "value": "甘蔗店"
+          },
+          {
+            "index": 177,
+            "isSelected": true,
+            "value": "登云店"
+          },
+          {
+            "index": 178,
+            "isSelected": true,
+            "value": "白沙店"
+          },
+          {
+            "index": 179,
+            "isSelected": true,
+            "value": "百子湾店"
+          },
+          {
+            "index": 180,
+            "isSelected": true,
+            "value": "盐城宝龙店"
+          },
+          {
+            "index": 181,
+            "isSelected": true,
+            "value": "省府店"
+          },
+          {
+            "index": 182,
+            "isSelected": true,
+            "value": "石狮泰禾广场店"
+          },
+          {
+            "index": 183,
+            "isSelected": true,
+            "value": "碧水芳洲店"
+          },
+          {
+            "index": 184,
+            "isSelected": true,
+            "value": "碧江广场店"
+          },
+          {
+            "index": 185,
+            "isSelected": true,
+            "value": "祥和店"
+          },
+          {
+            "index": 186,
+            "isSelected": true,
+            "value": "福新店"
+          },
+          {
+            "index": 187,
+            "isSelected": true,
+            "value": "福清万达店"
+          },
+          {
+            "index": 188,
+            "isSelected": true,
+            "value": "福湾店"
+          },
+          {
+            "index": 189,
+            "isSelected": true,
+            "value": "福飞店"
+          },
+          {
+            "index": 190,
+            "isSelected": true,
+            "value": "禧樾广场店"
+          },
+          {
+            "index": 191,
+            "isSelected": true,
+            "value": "禹洲店"
+          },
+          {
+            "index": 192,
+            "isSelected": true,
+            "value": "秦淮茂业店"
+          },
+          {
+            "index": 193,
+            "isSelected": true,
+            "value": "站前万达店"
+          },
+          {
+            "index": 194,
+            "isSelected": true,
+            "value": "笛扬路店"
+          },
+          {
+            "index": 195,
+            "isSelected": true,
+            "value": "管葡店"
+          },
+          {
+            "index": 196,
+            "isSelected": true,
+            "value": "红星苑店"
+          },
+          {
+            "index": 197,
+            "isSelected": true,
+            "value": "红豆广场店"
+          },
+          {
+            "index": 198,
+            "isSelected": true,
+            "value": "绿地缤纷城店"
+          },
+          {
+            "index": 199,
+            "isSelected": true,
+            "value": "群众店"
+          },
+          {
+            "index": 200,
+            "isSelected": true,
+            "value": "翠峰广场店"
+          },
+          {
+            "index": 201,
+            "isSelected": true,
+            "value": "茶会店"
+          },
+          {
+            "index": 202,
+            "isSelected": true,
+            "value": "草桥店"
+          },
+          {
+            "index": 203,
+            "isSelected": true,
+            "value": "荔华东万达店"
+          },
+          {
+            "index": 204,
+            "isSelected": true,
+            "value": "荔城北店"
+          },
+          {
+            "index": 205,
+            "isSelected": true,
+            "value": "萧山宝龙店"
+          },
+          {
+            "index": 206,
+            "isSelected": true,
+            "value": "蜀都万达广场店"
+          },
+          {
+            "index": 207,
+            "isSelected": true,
+            "value": "融侨店"
+          },
+          {
+            "index": 208,
+            "isSelected": true,
+            "value": "融恒时代广场店"
+          },
+          {
+            "index": 209,
+            "isSelected": true,
+            "value": "裕德源广场店"
+          },
+          {
+            "index": 210,
+            "isSelected": true,
+            "value": "西园店"
+          },
+          {
+            "index": 211,
+            "isSelected": true,
+            "value": "西洪店"
+          },
+          {
+            "index": 212,
+            "isSelected": true,
+            "value": "西田店"
+          },
+          {
+            "index": 213,
+            "isSelected": true,
+            "value": "西门店"
+          },
+          {
+            "index": 214,
+            "isSelected": true,
+            "value": "解放路店"
+          },
+          {
+            "index": 215,
+            "isSelected": true,
+            "value": "谷阳大道宝龙店"
+          },
+          {
+            "index": 216,
+            "isSelected": true,
+            "value": "象园店"
+          },
+          {
+            "index": 217,
+            "isSelected": true,
+            "value": "连江贵安新天地店"
+          },
+          {
+            "index": 218,
+            "isSelected": true,
+            "value": "通州万达店"
+          },
+          {
+            "index": 219,
+            "isSelected": true,
+            "value": "通河路店"
+          },
+          {
+            "index": 220,
+            "isSelected": true,
+            "value": "邵武恒华店"
+          },
+          {
+            "index": 221,
+            "isSelected": true,
+            "value": "郑和店"
+          },
+          {
+            "index": 222,
+            "isSelected": true,
+            "value": "重工街店"
+          },
+          {
+            "index": 223,
+            "isSelected": true,
+            "value": "金山万达广场店"
+          },
+          {
+            "index": 224,
+            "isSelected": true,
+            "value": "金帝银泰城店"
+          },
+          {
+            "index": 225,
+            "isSelected": true,
+            "value": "金楠天街店"
+          },
+          {
+            "index": 226,
+            "isSelected": true,
+            "value": "金沟河店"
+          },
+          {
+            "index": 227,
+            "isSelected": true,
+            "value": "金泉广场店"
+          },
+          {
+            "index": 228,
+            "isSelected": true,
+            "value": "金湖店"
+          },
+          {
+            "index": 229,
+            "isSelected": true,
+            "value": "金源滨海新城店"
+          },
+          {
+            "index": 230,
+            "isSelected": true,
+            "value": "金牛山广场店"
+          },
+          {
+            "index": 231,
+            "isSelected": true,
+            "value": "金祥店"
+          },
+          {
+            "index": 232,
+            "isSelected": true,
+            "value": "金辉店"
+          },
+          {
+            "index": 233,
+            "isSelected": true,
+            "value": "金辉淮安半岛店"
+          },
+          {
+            "index": 234,
+            "isSelected": true,
+            "value": "铜盘店"
+          },
+          {
+            "index": 235,
+            "isSelected": true,
+            "value": "银泰城店"
+          },
+          {
+            "index": 236,
+            "isSelected": true,
+            "value": "镜湖公园店"
+          },
+          {
+            "index": 237,
+            "isSelected": true,
+            "value": "长江北路店"
+          },
+          {
+            "index": 238,
+            "isSelected": true,
+            "value": "长江国际店"
+          },
+          {
+            "index": 239,
+            "isSelected": true,
+            "value": "长社路店"
+          },
+          {
+            "index": 240,
+            "isSelected": true,
+            "value": "长阳半岛店"
+          },
+          {
+            "index": 241,
+            "isSelected": true,
+            "value": "闽江世纪金源店"
+          },
+          {
+            "index": 242,
+            "isSelected": true,
+            "value": "隆昌店"
+          },
+          {
+            "index": 243,
+            "isSelected": true,
+            "value": "集美万达店"
+          },
+          {
+            "index": 244,
+            "isSelected": true,
+            "value": "集贤店"
+          },
+          {
+            "index": 245,
+            "isSelected": true,
+            "value": "雨花台店"
+          },
+          {
+            "index": 246,
+            "isSelected": true,
+            "value": "青枫公园宝龙店"
+          },
+          {
+            "index": 247,
+            "isSelected": true,
+            "value": "顺昌中山店"
+          },
+          {
+            "index": 248,
+            "isSelected": true,
+            "value": "首山店"
+          },
+          {
+            "index": 249,
+            "isSelected": true,
+            "value": "馨宜新天地店"
+          },
+          {
+            "index": 250,
+            "isSelected": true,
+            "value": "马家堡店"
+          },
+          {
+            "index": 251,
+            "isSelected": true,
+            "value": "马尾中环广场店"
+          },
+          {
+            "index": 252,
+            "isSelected": true,
+            "value": "马尾店"
+          },
+          {
+            "index": 253,
+            "isSelected": true,
+            "value": "鲁班路店"
+          },
+          {
+            "index": 254,
+            "isSelected": true,
+            "value": "鲁谷店"
+          },
+          {
+            "index": 255,
+            "isSelected": true,
+            "value": "鲤城广场店"
+          },
+          {
+            "index": 256,
+            "isSelected": true,
+            "value": "鳌峰店"
+          },
+          {
+            "index": 257,
+            "isSelected": true,
+            "value": "鸿坤理想城店"
+          },
+          {
+            "index": 258,
+            "isSelected": true,
+            "value": "鹤林店"
+          },
+          {
+            "index": 259,
+            "isSelected": true,
+            "value": "黎明店"
+          },
+          {
+            "index": 260,
+            "isSelected": true,
+            "value": "黑龙江万达店"
+          },
+          {
+            "index": 261,
+            "isSelected": true,
+            "value": "鼓山苑店"
+          },
+          {
+            "index": 262,
+            "isSelected": true,
+            "value": "龙岩万宝广场店"
+          },
+          {
+            "index": 263,
+            "isSelected": true,
+            "value": "龙岩万达店"
+          },
+          {
+            "index": 264,
+            "isSelected": true,
+            "value": "龙旗广场店"
+          },
+          {
+            "index": 265,
+            "isSelected": true,
+            "value": "龙海龙池店"
+          },
+          {
+            "index": 266,
+            "isSelected": true,
+            "value": "龙湖时代天街店"
+          },
+          {
+            "index": 267,
+            "isSelected": true,
+            "value": "龙湖虹桥天街店"
+          },
+          {
+            "index": 268,
+            "isSelected": true,
+            "value": "龙湖长楹天街店"
+          },
+          {
+            "index": 269,
+            "isSelected": true,
+            "value": "龙湾万达店"
+          },
+          {
+            "index": 270,
+            "isSelected": true,
+            "value": "龙门店"
+          }
+        ],
+        "name": "门店"
+      },
+      {
+        "isAllcheck": true,
+        "isSelected": false,
+        "items": [
+          {
+            "index": 1,
+            "isSelected": true,
+            "value": "休闲食品"
+          },
+          {
+            "index": 11,
+            "isSelected": true,
+            "value": "蔬果"
+          },
+          {
+            "index": 10,
+            "isSelected": true,
+            "value": "肉禽水产"
+          },
+          {
+            "index": 9,
+            "isSelected": true,
+            "value": "男女装"
+          },
+          {
+            "index": 8,
+            "isSelected": true,
+            "value": "烟酒饮料"
+          },
+          {
+            "index": 7,
+            "isSelected": true,
+            "value": "清洁用品"
+          },
+          {
+            "index": 6,
+            "isSelected": true,
+            "value": "干货"
+          },
+          {
+            "index": 5,
+            "isSelected": true,
+            "value": "干性杂货日配"
+          },
+          {
+            "index": 4,
+            "isSelected": true,
+            "value": "家用文体家电"
+          },
+          {
+            "index": 3,
+            "isSelected": true,
+            "value": "家居生活馆"
+          },
+          {
+            "index": 2,
+            "isSelected": true,
+            "value": "加工"
+          },
+          {
+            "index": 12,
+            "isSelected": true,
+            "value": "餐饮"
+          }
+        ],
+        "name": "商行"
+      }
+    ]
+  },
+  "name": "品类销售概况",
+  "table": {
+    "head": [
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "大区-门店-商行"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": false,
+        "sort": "default",
+        "value": "大区"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": false,
+        "sort": "default",
+        "value": "门店"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": false,
+        "sort": "default",
+        "value": "商行"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "昨日销售(万)"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "本月日均销售(万)"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "本月销售(万)"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "销售同比"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "销售环比"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "昨日促销占比(销售)"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "本月促销占比(销售)"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "昨日毛利(万)"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "本月日均毛利(万)"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "本月毛利(万)"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "毛利同比"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "毛利环比"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "昨日促销占比(毛利)"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "本月促销占比(毛利)"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "昨日客流"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "本月日均客流"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "本月客流"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "客流同比"
+      },
+      {
+        "isKeyColumn": false,
+        "originPosition": 0,
+        "show": true,
+        "sort": "default",
+        "value": "客流环比"
+      }
+    ],
+    "main_data": [
+      {
+        "keyColumnValue": "黑龙江区黑龙江万达店加工",
+        "area":"黑龙江",
+        "stores":"黑龙江万达店",
+        "classify":"加工",
+        "data": [
+          {
+            "color": 0,
+            "value": "2.9"
+          },
+          {
+            "color": 0,
+            "value": "2.7"
+          },
+          {
+            "color": 0,
+            "value": "67.0"
+          },
+          {
+            "color": 0,
+            "value": "-20.8%"
+          },
+          {
+            "color": 0,
+            "index": 0,
+            "value": "-12.1%"
+          }
+        ]
+      },
+      {
+        "keyColumnValue": "黑龙江区黑龙江万达店食品",
+        "area":"黑龙江",
+        "stores":"黑龙江万达店",
+        "classify":"食品",
+        "data": [
+          {
+            "color": 0,
+            "value": "加工"
+          },
+          {
+            "color": 0,
+            "value": "2.9"
+          },
+          {
+            "color": 0,
+            "value": "2.7"
+          },
+          {
+            "color": 0,
+            "value": "67.0"
+          },
+          {
+            "color": 0,
+            "value": "-20.8%"
+          },
+          {
+            "color": 0,
+            "index": 0,
+            "value": "-12.1%"
+          }
+        ]
+      }
+    ]
+  }
+}
