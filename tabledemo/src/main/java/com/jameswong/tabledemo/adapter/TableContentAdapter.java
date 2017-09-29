@@ -32,6 +32,7 @@ public class TableContentAdapter extends RecyclerView.Adapter<TableContentAdapte
     private OnTableContentTextClickListener clickListener;
     private long lastClickBarChartTime;
     private List<Head> mPopHeads;
+    private int selectColumn = -1;
 
     @Override
     public TableContentHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -42,28 +43,34 @@ public class TableContentAdapter extends RecyclerView.Adapter<TableContentAdapte
 
     @Override
     public void onBindViewHolder(TableContentHolder holder, final int position) {
-        if (mPopHeads != null) {
-//        if (false) {
-            for (int i = 0; i < mMainData.size()-1; i++) {
-                if (mMainData.get(i).getHeadIndex() == mPopHeads.get(position+1).getDefaultIndex()) {
-                    holder.mTvTableContent.setText(mMainData.get(i).getValue());
-                    break;
-                }
-            }
-        } else {
-            holder.mTvTableContent.setText(mMainData.get(position + 1).getValue());
-        }
+
+        holder.mTvTableContent.setText(mMainData.get(getRealMainDataPos(position)).getValue());
         holder.mTvTableContent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 long currentTimeMillis = System.currentTimeMillis();
-                if (currentTimeMillis - lastClickBarChartTime < 1000 && mMainData.get(position + 1).getValue().replace("%", "").matches("^([-]?\\d+[.]?\\d*)$")) {
-                    clickListener.clickContentTextPos(position + 1);
-                    return;
+                if (currentTimeMillis - lastClickBarChartTime < 1000) {
+                    int realPos = getRealMainDataPos(position);
+                    if (mMainData.get(realPos).getValue().replace("%", "").matches("[-]?\\d+[.]?\\d*")) {
+                        clickListener.clickContentTextPos(realPos);
+                        return;
+                    }
                 }
                 lastClickBarChartTime = currentTimeMillis;
             }
         });
+    }
+
+    private int getRealMainDataPos(int position) {
+        if (mPopHeads != null) {
+            for (int i = 0; i < mMainData.size(); i++) {
+                if (mMainData.get(i).getHeadIndex() == mPopHeads.get(position + 1).getDefaultIndex()) {
+                    return i;
+                }
+            }
+        }
+        return position + 1;
+
     }
 
     @Override

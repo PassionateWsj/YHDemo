@@ -72,8 +72,8 @@ public class TableBodyAdapter extends RecyclerView.Adapter<TableBodyAdapter.Tabl
     public void onBindViewHolder(final TableBodyHolder holder, int position) {
         if (mPopHeads != null) {
 //        if (false) {
-            for (int i = 0; i < mPopHeads.size(); i++) {
-                if (mPopHeads.get(i).getDefaultIndex() == 0) {
+            for (int i = 0; i < mMainData.get(position).size(); i++) {
+                if (mPopHeads.get(0).getDefaultIndex() == mMainData.get(position).get(i).getHeadIndex()) {
                     holder.mTvTableContentAreaName.setText(mMainData.get(position).get(i).getValue());
                     break;
                 }

@@ -37,8 +37,8 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import rx.Observable;
+import rx.Observer;
 import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Action1;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
@@ -160,17 +160,16 @@ public class TableV5Activity extends AppCompatActivity implements TableV5View, O
                 .map(new Func1<Integer, Boolean>() {
                     @Override
                     public Boolean call(Integer integer) {
-                        List<List<MainData>> mBodyAdapterData = mBodyAdapter.getAdapterData();
                         if (positiveSort && mSortPos != pos) {
-                            Collections.sort(mBodyAdapterData, new Comparator<List<MainData>>() {
+                            Collections.sort(mBodyAdapter.getAdapterData(), new Comparator<List<MainData>>() {
                                 @Override
                                 public int compare(List<MainData> mainDatas, List<MainData> t1) {
-                                    String value = mainDatas.get(pos + 1).getValue().replace("%", "");
-                                    String value1 = t1.get(pos + 1).getValue().replace("%", "");
-                                    double i = 0;
-                                    if (value.matches("^([-]?\\d+[.]?\\d*)$")) {
+                                    String value = mainDatas.get(pos+1).getValue().replace("%", "");
+                                    String value1 = t1.get(pos+1).getValue().replace("%", "");
+                                    double i;
+//                                    if (value.matches("[-]?\\d+[.]?\\d*")) {
                                         i = Double.parseDouble(value) - Double.parseDouble(value1);
-                                    }
+//                                    }
                                     if (i > 0) {
                                         return 1;
                                     }
@@ -181,15 +180,25 @@ public class TableV5Activity extends AppCompatActivity implements TableV5View, O
                                 }
                             });
                         } else {
-                            Collections.reverse(mBodyAdapterData);
+                            Collections.reverse(mBodyAdapter.getAdapterData());
                         }
                         return true;
                     }
                 })
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Action1<Boolean>() {
+                .subscribe(new Observer<Boolean>() {
                     @Override
-                    public void call(Boolean isSortSuccess) {
+                    public void onCompleted() {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        Log.i(TAG, "排序出错:::" + e.getMessage());
+                    }
+
+                    @Override
+                    public void onNext(Boolean aBoolean) {
                         mBodyAdapter.notifyDataSetChanged();
                         mHeadAdapter.sortClickable(true);
                         mSortPos = pos;
@@ -209,7 +218,7 @@ public class TableV5Activity extends AppCompatActivity implements TableV5View, O
         mLlHeadContainer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                clickPos(pos - 1);
+                clickPos(pos-1);
             }
         });
         mTvHeadTitle.setText(mTableData.getTable().getHead().get(pos).getValue());

@@ -54,6 +54,7 @@ class TableBarChartView : View {
                 p1.color = Color.parseColor("#ffffff")
                 canvas.drawRect(mWidth * -min, 0f, mWidth * -min + dividerLineWidth, measuredHeight.toFloat(), p1)
                 if (current < 0) {
+                    p.color = Color.parseColor("#91c941")
                     canvas.drawRect(mWidth * (-min + current), 0f, mWidth * (-min), measuredHeight.toFloat(), p)
                 } else if (current > 0) {
                     canvas.drawRect(mWidth * -min + dividerLineWidth, 0f, mWidth * (-min + current) + dividerLineWidth, measuredHeight.toFloat(), p)
