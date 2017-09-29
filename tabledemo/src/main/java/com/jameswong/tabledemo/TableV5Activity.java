@@ -152,6 +152,7 @@ public class TableV5Activity extends AppCompatActivity implements TableV5View, O
         if (mSortPos != pos && mSortPos != -1) {
             positiveSort = false;
         }
+        mHeadAdapter.sortClickable(false);
         Log.i(TAG, "解析出错，非法传参");
         positiveSort = !positiveSort;
         Observable.just(pos)
@@ -159,8 +160,9 @@ public class TableV5Activity extends AppCompatActivity implements TableV5View, O
                 .map(new Func1<Integer, Boolean>() {
                     @Override
                     public Boolean call(Integer integer) {
+                        List<List<MainData>> mBodyAdapterData = mBodyAdapter.getAdapterData();
                         if (positiveSort && mSortPos != pos) {
-                            Collections.sort(mBodyAdapter.getAdapterData(), new Comparator<List<MainData>>() {
+                            Collections.sort(mBodyAdapterData, new Comparator<List<MainData>>() {
                                 @Override
                                 public int compare(List<MainData> mainDatas, List<MainData> t1) {
                                     String value = mainDatas.get(pos + 1).getValue().replace("%", "");
@@ -179,7 +181,7 @@ public class TableV5Activity extends AppCompatActivity implements TableV5View, O
                                 }
                             });
                         } else {
-                            Collections.reverse(mBodyAdapter.getAdapterData());
+                            Collections.reverse(mBodyAdapterData);
                         }
                         return true;
                     }
@@ -189,6 +191,7 @@ public class TableV5Activity extends AppCompatActivity implements TableV5View, O
                     @Override
                     public void call(Boolean isSortSuccess) {
                         mBodyAdapter.notifyDataSetChanged();
+                        mHeadAdapter.sortClickable(true);
                         mSortPos = pos;
                     }
                 });

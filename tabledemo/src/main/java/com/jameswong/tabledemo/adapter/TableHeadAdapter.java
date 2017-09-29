@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.jameswong.tabledemo.R;
 import com.jameswong.tabledemo.bean.Head;
@@ -32,12 +33,12 @@ public class TableHeadAdapter extends RecyclerView.Adapter<TableHeadAdapter.Head
     private Context mContext;
     private List<Head> mHeads;
     private OnTableHeadClickListener mOnTableHeadClickListener;
-    private int mLastClickPos;
-    private long mLastClickTimeMillis;
+    private boolean isSortClickable;
 
     public TableHeadAdapter(Context mContext, OnTableHeadClickListener onTableHeadClickListener) {
         this.mContext = mContext;
         mOnTableHeadClickListener = onTableHeadClickListener;
+        isSortClickable = true;
     }
 
     @Override
@@ -54,16 +55,11 @@ public class TableHeadAdapter extends RecyclerView.Adapter<TableHeadAdapter.Head
         holder.mTvHeadTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (mLastClickPos == position) {
+                if (isSortClickable) {
                     mOnTableHeadClickListener.clickPos(position);
-                    return;
+                } else {
+                    Toast.makeText(mContext, "点太快了", Toast.LENGTH_SHORT).show();
                 }
-                mLastClickPos = position;
-                long mCurrentClickTimeMillis = System.currentTimeMillis();
-                if (mCurrentClickTimeMillis - mLastClickTimeMillis > 5000) {
-                    mOnTableHeadClickListener.clickPos(position);
-                }
-                mLastClickTimeMillis = mCurrentClickTimeMillis;
             }
         });
     }
@@ -83,6 +79,10 @@ public class TableHeadAdapter extends RecyclerView.Adapter<TableHeadAdapter.Head
             mHeads.remove(0);
         }
         notifyDataSetChanged();
+    }
+
+    public void sortClickable(boolean isSortClickable) {
+        this.isSortClickable = isSortClickable;
     }
 
     class HeadViewHolder extends RecyclerView.ViewHolder {
