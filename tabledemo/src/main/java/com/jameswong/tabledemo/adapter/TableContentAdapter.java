@@ -32,7 +32,6 @@ public class TableContentAdapter extends RecyclerView.Adapter<TableContentAdapte
     private OnTableContentTextClickListener clickListener;
     private long lastClickBarChartTime;
     private List<Head> mCurrentHeads;
-    private int selectColumn = -1;
 
     @Override
     public TableContentHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -44,12 +43,6 @@ public class TableContentAdapter extends RecyclerView.Adapter<TableContentAdapte
     @Override
     public void onBindViewHolder(TableContentHolder holder, final int position) {
 
-//        holder.mTvTableContent.setText(mDataBeen.get(getRealMainDataPos(position)).getValue());
-//        if (mCurrentHeads != null) {
-//            holder.mTvTableContent.setText(mDataBeen.get(mCurrentHeads.get(position + 1).getDefaultIndex()).getValue());
-//        } else {
-//            holder.mTvTableContent.setText(mDataBeen.get(position + 1).getValue());
-//        }
         if (mDataBeen != null && mCurrentHeads != null) {
             holder.mTvTableContent.setText(mDataBeen.get(mCurrentHeads.get(position + 1).getDefaultIndex()).getValue());
             holder.mTvTableContent.setOnClickListener(new View.OnClickListener() {
@@ -67,18 +60,6 @@ public class TableContentAdapter extends RecyclerView.Adapter<TableContentAdapte
             });
         }
     }
-
-//    private int getRealMainDataPos(int position) {
-//        if (mCurrentHeads != null) {
-//            for (int i = 0; i < mDataBeen.size(); i++) {
-//                if (mDataBeen.get(i).getHeadIndex() == mCurrentHeads.get(position + 1).getDefaultIndex()) {
-//                    return i;
-//                }
-//            }
-//        }
-//        return position + 1;
-//
-//    }
 
     @Override
     public int getItemCount() {

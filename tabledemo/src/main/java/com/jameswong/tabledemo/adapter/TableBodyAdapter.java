@@ -70,19 +70,6 @@ public class TableBodyAdapter extends RecyclerView.Adapter<TableBodyAdapter.Tabl
 
     @Override
     public void onBindViewHolder(final TableBodyHolder holder, int position) {
-//        if (mCurrentHeads != null) {
-////        if (false) {
-//            for (int i = 0; i < mMainData.get(position).getData().size(); i++) {
-//                if (mCurrentHeads.get(0).getDefaultIndex() == mMainData.get(position).getData().get(i).getHeadIndex()) {
-//                    holder.mTvTableBodyKeyColumnName.setText(mMainData.get(position).getData().get(i).getValue());
-//                    break;
-//                }
-//            }
-//        } else {
-//            holder.mTvTableBodyKeyColumnName.setText(mMainData.get(position).getData().get(0).getValue());
-//        }
-//
-//        holder.mTvTableBodyKeyColumnName.setText(mMainData.get(position).get(0).getValue());
         if (mMainData != null && mCurrentHeads != null) {
             holder.mTvTableBodyKeyColumnName.setText(mMainData.get(position).getData().get(mCurrentHeads.get(0).getDefaultIndex()).getValue());
             if (type == SHOW_NUMBER) {

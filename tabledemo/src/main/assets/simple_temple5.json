@@ -1292,12 +1292,12 @@
       {
         "value": "大区-门店-商行",
         "defaultIndex": 0,
-        "show": true
+        "show": false
       },
       {
         "value": "昨日销售(万)",
         "defaultIndex": 1,
-        "show": true
+        "show": false
       },
       {
         "value": "本月日均销售(万)",
@@ -1392,6 +1392,2126 @@
     ],
     "main_data": [
       {
+        "area": "黑龙江区",
+        "store": "黑龙江万达店",
+        "category": "加工",
+        "data": [
+          {
+            "value": "黑龙江区黑龙江万达店加工",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.91",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.9",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "67.0",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.8%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-12.1%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "3.8%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "54.4%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.4",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "0.4",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.2",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-145.4%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-10.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "17157",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "402212",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-278.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-119.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "黑龙江万达店",
+        "category": "蔬果",
+        "data": [
+          {
+            "value": "黑龙江区黑龙江万达店蔬果",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.893",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.736",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "67.022",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.48%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-112.16%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "3.28%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "5.47%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.24",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "40.45",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.22",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-115.44%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-140.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "1757",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "402422",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-28.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-169.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "黑龙江万达店",
+        "category": "休闲食品",
+        "data": [
+          {
+            "value": "黑龙江区黑龙江万达店休闲食品",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.1494",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.732",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "567.102",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.48%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-12.16%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "38.28%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "5.47%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.24",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "0.45",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.22",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-15.44%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-108.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "1757",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "40222",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-278.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-19.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "黑龙江解放路店",
+        "category": "休闲食品",
+        "data": [
+          {
+            "value": "黑龙江区黑龙江解放路店休闲食品",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.1592",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.733",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "7.027",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.48%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-142.16%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "39.28%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "5.47%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.24",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "4.45",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.22",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-15.44%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-10.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "1757",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "40222",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-28.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-19.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "建华万达店",
+        "category": "加工",
+        "data": [
+          {
+            "value": "黑龙江区建华万达店加工",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.190",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.735",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "67.042",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.48%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-12.16%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "3.28%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "5.47%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.24",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "0.45",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.22",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-15.44%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-10.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "1757",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "40222",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-28.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-19.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "黑龙江万达店",
+        "category": "加工",
+        "data": [
+          {
+            "value": "黑龙江区黑龙江万达店加工",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.91",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.9",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "67.0",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.8%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-12.1%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "3.8%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "54.4%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.4",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "0.4",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.2",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-145.4%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-10.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "17157",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "402212",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-278.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-119.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "黑龙江万达店",
+        "category": "蔬果",
+        "data": [
+          {
+            "value": "黑龙江区黑龙江万达店蔬果",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.893",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.736",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "67.022",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.48%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-112.16%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "3.28%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "5.47%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.24",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "40.45",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.22",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-115.44%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-140.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "1757",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "402422",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-28.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-169.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "黑龙江万达店",
+        "category": "休闲食品",
+        "data": [
+          {
+            "value": "黑龙江区黑龙江万达店休闲食品",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.1494",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.732",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "567.102",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.48%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-12.16%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "38.28%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "5.47%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.24",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "0.45",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.22",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-15.44%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-108.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "1757",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "40222",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-278.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-19.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "黑龙江解放路店",
+        "category": "休闲食品",
+        "data": [
+          {
+            "value": "黑龙江区黑龙江解放路店休闲食品",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.1592",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.733",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "7.027",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.48%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-142.16%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "39.28%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "5.47%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.24",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "4.45",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.22",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-15.44%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-10.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "1757",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "40222",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-28.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-19.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "建华万达店",
+        "category": "加工",
+        "data": [
+          {
+            "value": "黑龙江区建华万达店加工",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.190",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.735",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "67.042",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.48%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-12.16%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "3.28%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "5.47%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.24",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "0.45",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.22",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-15.44%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-10.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "1757",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "40222",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-28.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-19.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "黑龙江万达店",
+        "category": "加工",
+        "data": [
+          {
+            "value": "黑龙江区黑龙江万达店加工",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.91",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.9",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "67.0",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.8%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-12.1%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "3.8%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "54.4%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.4",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "0.4",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.2",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-145.4%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-10.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "17157",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "402212",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-278.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-119.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "黑龙江万达店",
+        "category": "蔬果",
+        "data": [
+          {
+            "value": "黑龙江区黑龙江万达店蔬果",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.893",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.736",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "67.022",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.48%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-112.16%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "3.28%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "5.47%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.24",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "40.45",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.22",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-115.44%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-140.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "1757",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "402422",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-28.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-169.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "黑龙江万达店",
+        "category": "休闲食品",
+        "data": [
+          {
+            "value": "黑龙江区黑龙江万达店休闲食品",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.1494",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.732",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "567.102",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.48%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-12.16%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "38.28%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "5.47%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.24",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "0.45",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.22",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-15.44%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-108.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "1757",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "40222",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-278.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-19.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "黑龙江解放路店",
+        "category": "休闲食品",
+        "data": [
+          {
+            "value": "黑龙江区黑龙江解放路店休闲食品",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.1592",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.733",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "7.027",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.48%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-142.16%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "39.28%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "5.47%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.24",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "4.45",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.22",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-15.44%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-10.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "1757",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "40222",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-28.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-19.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "建华万达店",
+        "category": "加工",
+        "data": [
+          {
+            "value": "黑龙江区建华万达店加工",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.190",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.735",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "67.042",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.48%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-12.16%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "3.28%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "5.47%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.24",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "0.45",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.22",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-15.44%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-10.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "1757",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "40222",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-28.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-19.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "黑龙江万达店",
+        "category": "加工",
+        "data": [
+          {
+            "value": "黑龙江区黑龙江万达店加工",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.91",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.9",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "67.0",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.8%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-12.1%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "3.8%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "54.4%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.4",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "0.4",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.2",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-145.4%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-10.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "17157",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "402212",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-278.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-119.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "黑龙江万达店",
+        "category": "蔬果",
+        "data": [
+          {
+            "value": "黑龙江区黑龙江万达店蔬果",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.893",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.736",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "67.022",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.48%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-112.16%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "3.28%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "5.47%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.24",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "40.45",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.22",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-115.44%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-140.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "1757",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "402422",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-28.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-169.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "黑龙江万达店",
+        "category": "休闲食品",
+        "data": [
+          {
+            "value": "黑龙江区黑龙江万达店休闲食品",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.1494",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.732",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "567.102",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.48%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-12.16%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "38.28%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "5.47%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.24",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "0.45",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.22",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-15.44%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-108.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "1757",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "40222",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-278.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-19.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "黑龙江解放路店",
+        "category": "休闲食品",
+        "data": [
+          {
+            "value": "黑龙江区黑龙江解放路店休闲食品",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.1592",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.733",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "7.027",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.48%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-142.16%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "39.28%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "5.47%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.24",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "4.45",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.22",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-15.44%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-10.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "1757",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "40222",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-28.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-19.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
+        "area": "黑龙江区",
+        "store": "建华万达店",
+        "category": "加工",
+        "data": [
+          {
+            "value": "黑龙江区建华万达店加工",
+            "headIndex": 0,
+            "color": 0
+          },
+          {
+            "value": "2.190",
+            "headIndex": 1,
+            "color": 0
+          },
+          {
+            "value": "2.735",
+            "headIndex": 2,
+            "color": 0
+          },
+          {
+            "value": "67.042",
+            "headIndex": 3,
+            "color": 0
+          },
+          {
+            "value": "-20.48%",
+            "headIndex": 4,
+            "color": 0
+          },
+          {
+            "value": "-12.16%",
+            "headIndex": 5,
+            "color": 0
+          },
+          {
+            "value": "3.28%",
+            "headIndex": 6,
+            "color": 0
+          },
+          {
+            "value": "5.47%",
+            "headIndex": 7,
+            "color": 0
+          },
+          {
+            "value": "0.24",
+            "headIndex": 8,
+            "color": 0
+          },
+          {
+            "value": "0.45",
+            "headIndex": 9,
+            "color": 0
+          },
+          {
+            "value": "10.22",
+            "headIndex": 10,
+            "color": 0
+          },
+          {
+            "value": "-15.44%",
+            "headIndex": 11,
+            "color": 0
+          },
+          {
+            "value": "-10.0%",
+            "headIndex": 12,
+            "color": 0
+          },
+          {
+            "value": "2.9%",
+            "headIndex": 13,
+            "color": 0
+          },
+          {
+            "value": "3.9%",
+            "headIndex": 14,
+            "color": 0
+          },
+          {
+            "value": "1757",
+            "headIndex": 15,
+            "color": 0
+          },
+          {
+            "value": "1608.9",
+            "headIndex": 16,
+            "color": 0
+          },
+          {
+            "value": "40222",
+            "headIndex": 17,
+            "color": 0
+          },
+          {
+            "value": "-28.0%",
+            "headIndex": 18,
+            "color": 0
+          },
+          {
+            "value": "-19.0%",
+            "headIndex": 19,
+            "color": 0
+          }
+        ]
+      },{
         "area": "黑龙江区",
         "store": "黑龙江万达店",
         "category": "加工",

@@ -126,55 +126,31 @@ public class TableV5ModelImpl implements TableV5Model {
         int k;
         int cut;
         for (int i = 0; i < increasingRow; i++) {
-            k = 0;
-            cut = 0;
-            for (int j = 0; j < tableChart.getTable().getMain_data().get(i).getData().size(); j++) {
-                if (!tableChart.getTable().getHead().get(k).isShow()) {
+            for (int j = tableChart.getTable().getHead().size() - 1; j > 0 || j == 0; j--) {
+                if (!tableChart.getTable().getHead().get(tableChart.getTable().getMain_data().get(i).getData().get(j).getHeadIndex()).isShow()) {
                     tableChart.getTable().getMain_data().get(i).getData().remove(j);
-                    cut++;
-                    j--;
-                }
-//                else {
-//                    tableChart.getTable().getMain_data().get(i).get(j).setHeadIndex(j);
-//                }
-                k++;
-                if (k == tableChart.getTable().getMain_data().get(i).getData().size() + cut) {
-                    break;
                 }
             }
+//            k = 0;
+//            cut = 0;
+//            for (int j = 0; j < tableChart.getTable().getMain_data().get(i).getData().size(); j++) {
+//                if (!tableChart.getTable().getHead().get(k).isShow()) {
+//                    tableChart.getTable().getMain_data().get(i).getData().remove(j);
+//                    cut++;
+//                    j--;
+//                }
+//                k++;
+//                if (k == tableChart.getTable().getMain_data().get(i).getData().size() + cut) {
+//                    break;
+//                }
+//            }
             mainDatas.add(tableChart.getTable().getMain_data().get(i));
         }
-//        k = 0;
-//        cut = 0;
-        for (int j = 0; j < tableChart.getTable().getHead().size(); j++) {
+        for (int j = tableChart.getTable().getHead().size() - 1; j > 0 || j == 0; j--) {
             if (!tableChart.getTable().getHead().get(j).isShow()) {
                 tableChart.getTable().getHead().remove(j);
-//                cut++;
-                j--;
             }
-//            else {
-//                tableChart.getTable().getHead().get(j).setDefaultIndex(j);
-//            }
-//            k++;
-//            if (k == tableChart.getTable().getHead().size()+cut) {
-//                break;
-//            }
         }
-//        for (int i = 0; i < increasingRow; i++) {
-//            for (int j = tableChart.getTable().getMain_data().get(i).size() - 1; j > 0 || j == 0; j--) {
-//                tableChart.getTable().getMain_data().get(i).get(j).setHeadIndex(j);
-//                if (!tableChart.getTable().getHead().get(j).isShow()) {
-//                    tableChart.getTable().getMain_data().get(i).remove(j);
-//                }
-//            }
-//            mainDatas.add(tableChart.getTable().getMain_data().get(i));
-//        }
-//        for (int j = tableChart.getTable().getHead().size() - 1; j > 0 || j == 0; j--) {
-//            tableChart.getTable().getHead().get(j).setDefaultIndex(j);
-//            if (!tableChart.getTable().getHead().get(j).isShow()) {
-//                tableChart.getTable().getHead().remove(j);
-//            }
-//        }
         tableChart.getTable().setMain_data(mainDatas);
         return tableChart;
     }

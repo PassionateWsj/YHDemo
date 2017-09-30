@@ -42,8 +42,6 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
-import static com.jameswong.tabledemo.R.id.tv_head_title;
-
 /**
  * ****************************************************
  * author: jameswong
@@ -56,32 +54,85 @@ import static com.jameswong.tabledemo.R.id.tv_head_title;
 public class TableV5Activity extends AppCompatActivity implements TableV5View, OnTableHeadClickListener, OnHeadShowTableDataListener, OnStartDragListener {
     private static final String TAG = "hjjzz";
 
+    /**
+     * KeyColumn 列名
+     */
     @BindView(R.id.tv_table_name)
     TextView mTvTableName;
+    /**
+     * 显示第一行的 RecyclerView
+     */
     @BindView(R.id.rv_head)
     RecyclerView mRvHead;
+    /**
+     * 显示第二行开始的 RecyclerView
+     */
     @BindView(R.id.rv_body)
     RecyclerView mRvBody;
-    @BindView(tv_head_title)
-    TextView mTvHeadTitle;
+    /**
+     * 条状图模式下 列排序图标
+     */
     @BindView(R.id.tv_head_sort)
     TextView mTvHeadSort;
+    /**
+     * 条状图模式下 列标题名
+     */
+    @BindView(R.id.tv_head_title)
+    TextView mTvHeadTitle;
+    /**
+     * 条状图模式下 列标题容器
+     */
     @BindView(R.id.ll_head_container)
     LinearLayout mLlHeadContainer;
+    /**
+     * 选列窗口定位 View
+     */
     @BindView(R.id.popup_top_reference)
     View mPopupTopReference;
+    /**
+     * 测试 url
+     */
     private String urlString = "http://yonghui-dev.idata.mobi/api/v1/group/165/template/5/report/90/json";
+    /**
+     * 模板五数据 Bean
+     */
     private TableChart mTableData;
+    /**
+     * 模板五 Presenter 类
+     */
     private TableV5Presenter mPresenter;
+    /**
+     * 表格第一行 RecyclerView 适配器
+     */
     private TableHeadAdapter mHeadAdapter;
+    /**
+     * 表格第一行以下的 RecyclerView 适配器
+     */
     private TableBodyAdapter mBodyAdapter;
+    /**
+     * 是否从小到大排序
+     */
     private boolean positiveSort = false;
+    /**
+     * 上一次排序列
+     */
     private int mSortPos = -1;
+    /**
+     * 选列窗口
+     */
     private PopupWindow mPopupWindow;
+    /**
+     * 选列适配器
+     */
     private TableSelectColumnAdapter mSelectColumnAdapter;
+    /**
+     * 选列 RecyclerView 触摸事件帮助类
+     */
     private ItemTouchHelper mItemTouchHelper;
+    /**
+     * 第一行表头的 数据类
+     */
     private List<Head> mCurrentHeads;
-    private int realPos;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
