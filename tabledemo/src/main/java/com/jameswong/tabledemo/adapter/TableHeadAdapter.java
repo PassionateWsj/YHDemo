@@ -80,6 +80,9 @@ public class TableHeadAdapter extends RecyclerView.Adapter<TableHeadAdapter.Head
         }
         notifyDataSetChanged();
     }
+    public List<Head> getAdapterData(){
+        return mHeads;
+    }
 
     public void sortClickable(boolean isSortClickable) {
         this.isSortClickable = isSortClickable;

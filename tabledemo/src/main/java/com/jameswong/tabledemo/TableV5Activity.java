@@ -154,7 +154,6 @@ public class TableV5Activity extends AppCompatActivity implements TableV5View, O
         }
         mHeadAdapter.sortClickable(false);
         Log.i(TAG, "解析出错，非法传参");
-        positiveSort = !positiveSort;
         Observable.just(pos)
                 .subscribeOn(Schedulers.newThread())
                 .map(new Func1<Integer, Boolean>() {
@@ -164,12 +163,10 @@ public class TableV5Activity extends AppCompatActivity implements TableV5View, O
                             Collections.sort(mBodyAdapter.getAdapterData(), new Comparator<List<MainData>>() {
                                 @Override
                                 public int compare(List<MainData> mainDatas, List<MainData> t1) {
-                                    String value = mainDatas.get(pos+1).getValue().replace("%", "");
-                                    String value1 = t1.get(pos+1).getValue().replace("%", "");
+                                    String value = mainDatas.get(pos + 1).getValue().replace("%", "");
+                                    String value1 = t1.get(pos + 1).getValue().replace("%", "");
                                     double i;
-//                                    if (value.matches("[-]?\\d+[.]?\\d*")) {
-                                        i = Double.parseDouble(value) - Double.parseDouble(value1);
-//                                    }
+                                    i = Double.parseDouble(value) - Double.parseDouble(value1);
                                     if (i > 0) {
                                         return 1;
                                     }
@@ -218,7 +215,7 @@ public class TableV5Activity extends AppCompatActivity implements TableV5View, O
         mLlHeadContainer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                clickPos(pos-1);
+                clickPos(pos - 1);
             }
         });
         mTvHeadTitle.setText(mTableData.getTable().getHead().get(pos).getValue());
