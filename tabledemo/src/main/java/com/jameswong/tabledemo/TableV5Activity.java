@@ -153,6 +153,7 @@ public class TableV5Activity extends AppCompatActivity implements TableV5View, O
             positiveSort = false;
         }
         mHeadAdapter.sortClickable(false);
+        positiveSort = !positiveSort;
         Log.i(TAG, "解析出错，非法传参");
         Observable.just(pos)
                 .subscribeOn(Schedulers.newThread())
