@@ -6,8 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.jameswong.tabledemo.bean.Head;
-import com.jameswong.tabledemo.bean.MainData;
+import com.jameswong.tabledemo.bean.Table.Head;
+import com.jameswong.tabledemo.bean.Table.MainData;
 import com.kelin.scrollablepanel.library.PanelAdapter;
 
 import java.util.ArrayList;
@@ -23,7 +23,7 @@ import java.util.List;
  * ****************************************************
  */
 class TestPanelAdapter extends PanelAdapter {
-    private List<List<MainData>> main_data;
+    private List<MainData> main_data;
     private List<Head> head;
 //    private List<List<String>> data;
 //    private List<List<String>> data;
@@ -49,7 +49,7 @@ class TestPanelAdapter extends PanelAdapter {
         if (row == 0 && head != null) {
             content = head.get(column).getValue();
         } else if (main_data != null) {
-            content = main_data.get(row).get(column).getValue();
+            content = main_data.get(row).getData().get(column).getValue();
         }
 
         ((TitleViewHolder) holder).titleTextView.setText(content);
@@ -70,7 +70,7 @@ class TestPanelAdapter extends PanelAdapter {
         }
     }
 
-    public void setMainData(List<List<MainData>> mainData) {
+    public void setMainData(List<MainData> mainData) {
         if (main_data == null) {
             main_data = new ArrayList<>();
         }

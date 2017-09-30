@@ -7,9 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.jameswong.tabledemo.bean.Table.*;
+import com.jameswong.tabledemo.bean.Table.MainData.*;
 import com.jameswong.tabledemo.R;
-import com.jameswong.tabledemo.bean.Head;
-import com.jameswong.tabledemo.bean.MainData;
 import com.jameswong.tabledemo.listener.OnTableContentTextClickListener;
 
 import java.util.ArrayList;
@@ -28,10 +28,10 @@ public class TableContentAdapter extends RecyclerView.Adapter<TableContentAdapte
     private static final String TAG = "hjjzz";
     private int cacheViewCount = 0;
 
-    private List<MainData> mMainData;
+    private List<DataBean> mDataBeen;
     private OnTableContentTextClickListener clickListener;
     private long lastClickBarChartTime;
-    private List<Head> mPopHeads;
+    private List<Head> mCurrentHeads;
     private int selectColumn = -1;
 
     @Override
@@ -44,50 +44,57 @@ public class TableContentAdapter extends RecyclerView.Adapter<TableContentAdapte
     @Override
     public void onBindViewHolder(TableContentHolder holder, final int position) {
 
-        holder.mTvTableContent.setText(mMainData.get(getRealMainDataPos(position)).getValue());
-        holder.mTvTableContent.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                long currentTimeMillis = System.currentTimeMillis();
-                if (currentTimeMillis - lastClickBarChartTime < 1000) {
-                    int realPos = getRealMainDataPos(position);
-                    if (mMainData.get(realPos).getValue().replace("%", "").matches("[-]?\\d+[.]?\\d*")) {
-                        clickListener.clickContentTextPos(realPos);
-                        return;
+//        holder.mTvTableContent.setText(mDataBeen.get(getRealMainDataPos(position)).getValue());
+//        if (mCurrentHeads != null) {
+//            holder.mTvTableContent.setText(mDataBeen.get(mCurrentHeads.get(position + 1).getDefaultIndex()).getValue());
+//        } else {
+//            holder.mTvTableContent.setText(mDataBeen.get(position + 1).getValue());
+//        }
+        if (mDataBeen != null && mCurrentHeads != null) {
+            holder.mTvTableContent.setText(mDataBeen.get(mCurrentHeads.get(position + 1).getDefaultIndex()).getValue());
+            holder.mTvTableContent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    long currentTimeMillis = System.currentTimeMillis();
+                    if (currentTimeMillis - lastClickBarChartTime < 1000) {
+                        if (mDataBeen.get(mCurrentHeads.get(position+1).getDefaultIndex()).getValue().replace("%", "").matches("[-]?\\d+[.]?\\d*")) {
+                            clickListener.clickContentTextPos(mCurrentHeads.get(position+1).getDefaultIndex());
+                            return;
+                        }
                     }
+                    lastClickBarChartTime = currentTimeMillis;
                 }
-                lastClickBarChartTime = currentTimeMillis;
-            }
-        });
-    }
-
-    private int getRealMainDataPos(int position) {
-        if (mPopHeads != null) {
-            for (int i = 0; i < mMainData.size(); i++) {
-                if (mMainData.get(i).getHeadIndex() == mPopHeads.get(position + 1).getDefaultIndex()) {
-                    return i;
-                }
-            }
+            });
         }
-        return position + 1;
-
     }
+
+//    private int getRealMainDataPos(int position) {
+//        if (mCurrentHeads != null) {
+//            for (int i = 0; i < mDataBeen.size(); i++) {
+//                if (mDataBeen.get(i).getHeadIndex() == mCurrentHeads.get(position + 1).getDefaultIndex()) {
+//                    return i;
+//                }
+//            }
+//        }
+//        return position + 1;
+//
+//    }
 
     @Override
     public int getItemCount() {
-        return mMainData == null ? 0 : mMainData.size() - 1;
+        return mDataBeen == null ? 0 : mDataBeen.size() - 1;
     }
 
-    public List<MainData> getData() {
-        return mMainData;
+    public List<DataBean> getData() {
+        return mDataBeen;
     }
 
-    public void setData(List<MainData> main_data) {
-        if (mMainData == null) {
-            mMainData = new ArrayList<>();
+    public void setData(List<DataBean> dataBeen) {
+        if (mDataBeen == null) {
+            mDataBeen = new ArrayList<>();
         }
-        if (mMainData != main_data) {
-            mMainData = main_data;
+        if (mDataBeen != dataBeen) {
+            mDataBeen = dataBeen;
             notifyDataSetChanged();
         }
     }
@@ -98,7 +105,7 @@ public class TableContentAdapter extends RecyclerView.Adapter<TableContentAdapte
     }
 
     public void setHeadsData(List<Head> popHeads) {
-        this.mPopHeads = popHeads;
+        this.mCurrentHeads = popHeads;
         notifyDataSetChanged();
     }
 

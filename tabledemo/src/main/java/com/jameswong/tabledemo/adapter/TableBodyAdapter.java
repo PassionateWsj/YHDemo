@@ -11,8 +11,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.jameswong.tabledemo.R;
-import com.jameswong.tabledemo.bean.Head;
-import com.jameswong.tabledemo.bean.MainData;
+import com.jameswong.tabledemo.bean.Table.Head;
+import com.jameswong.tabledemo.bean.Table.MainData;
 import com.jameswong.tabledemo.custom.TableBarChartView;
 import com.jameswong.tabledemo.listener.OnHeadShowTableDataListener;
 import com.jameswong.tabledemo.listener.OnTableContentTextClickListener;
@@ -34,7 +34,7 @@ public class TableBodyAdapter extends RecyclerView.Adapter<TableBodyAdapter.Tabl
     private static final String TAG = "hjjzz";
     private int cacheViewCount = 0;
 
-    private List<List<MainData>> mMainData;
+    private List<MainData> mMainData;
 
     private HashSet<RecyclerView> observerList = new HashSet<>();
     private int firstPos = -1;
@@ -49,7 +49,7 @@ public class TableBodyAdapter extends RecyclerView.Adapter<TableBodyAdapter.Tabl
     private float selectColumnMaxValue = 0f;
     private long lastClickBarChartTime = 0;
     private RecyclerView.RecycledViewPool mPool;
-    private List<Head> mPopHeads;
+    private List<Head> mCurrentHeads;
 
     public TableBodyAdapter(OnHeadShowTableDataListener onHeadShowTableDataListener, RecyclerView mRvHead) {
         this.mOnHeadShowTableDataListener = onHeadShowTableDataListener;
@@ -70,54 +70,58 @@ public class TableBodyAdapter extends RecyclerView.Adapter<TableBodyAdapter.Tabl
 
     @Override
     public void onBindViewHolder(final TableBodyHolder holder, int position) {
-        if (mPopHeads != null) {
-//        if (false) {
-            for (int i = 0; i < mMainData.get(position).size(); i++) {
-                if (mPopHeads.get(0).getDefaultIndex() == mMainData.get(position).get(i).getHeadIndex()) {
-                    holder.mTvTableContentAreaName.setText(mMainData.get(position).get(i).getValue());
-                    break;
+//        if (mCurrentHeads != null) {
+////        if (false) {
+//            for (int i = 0; i < mMainData.get(position).getData().size(); i++) {
+//                if (mCurrentHeads.get(0).getDefaultIndex() == mMainData.get(position).getData().get(i).getHeadIndex()) {
+//                    holder.mTvTableBodyKeyColumnName.setText(mMainData.get(position).getData().get(i).getValue());
+//                    break;
+//                }
+//            }
+//        } else {
+//            holder.mTvTableBodyKeyColumnName.setText(mMainData.get(position).getData().get(0).getValue());
+//        }
+//
+//        holder.mTvTableBodyKeyColumnName.setText(mMainData.get(position).get(0).getValue());
+        if (mMainData != null && mCurrentHeads != null) {
+            holder.mTvTableBodyKeyColumnName.setText(mMainData.get(position).getData().get(mCurrentHeads.get(0).getDefaultIndex()).getValue());
+            if (type == SHOW_NUMBER) {
+                holder.mRvTableContentText.setVisibility(View.VISIBLE);
+                holder.mLlTableBarChart.setVisibility(View.GONE);
+                holder.mTableContentAdapter.setData(mMainData.get(position).getData());
+                if (mCurrentHeads != null) {
+                    holder.mTableContentAdapter.setHeadsData(mCurrentHeads);
                 }
-            }
-        } else {
-            holder.mTvTableContentAreaName.setText(mMainData.get(position).get(0).getValue());
-        }
-//        holder.mTvTableContentAreaName.setText(mMainData.get(position).get(0).getValue());
-        if (type == SHOW_NUMBER) {
-            holder.mRvTableContentText.setVisibility(View.VISIBLE);
-            holder.mLlTableBarChart.setVisibility(View.GONE);
-            holder.mTableContentAdapter.setData(mMainData.get(position));
-            if (mPopHeads != null) {
-                holder.mTableContentAdapter.setHeadsData(mPopHeads);
-            }
-            holder.mTableContentAdapter.setClickListener(new OnTableContentTextClickListener() {
-                @Override
-                public void clickContentTextPos(int pos) {
-                    type = SHOW_BAR_CHAR;
-                    Log.i(TAG, "点击数值:::改变UI");
-                    selectColumn = pos;
-                    mOnHeadShowTableDataListener.clickContentTextPos(pos);
-                    notifyDataSetChanged();
-                }
-
-            });
-        } else if (type == SHOW_BAR_CHAR) {
-            holder.mLlTableBarChart.setVisibility(View.VISIBLE);
-            holder.mRvTableContentText.setVisibility(View.GONE);
-            holder.mTvTableBarChartText.setText(mMainData.get(position).get(selectColumn).getValue());
-            float currentValue = Float.parseFloat(mMainData.get(position).get(selectColumn).getValue().replace("%", ""));
-            holder.mTbcvTableBarChart.setData(selectColumnMinValue, selectColumnMaxValue, currentValue);
-            holder.mLlTableBarChart.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    long currentTimeMillis = System.currentTimeMillis();
-                    if (currentTimeMillis - lastClickBarChartTime < 1000) {
-                        type = SHOW_NUMBER;
-                        mOnHeadShowTableDataListener.showAllData();
+                holder.mTableContentAdapter.setClickListener(new OnTableContentTextClickListener() {
+                    @Override
+                    public void clickContentTextPos(int pos) {
+                        type = SHOW_BAR_CHAR;
+                        Log.i(TAG, "点击数值:::改变UI");
+                        selectColumn = pos;
+                        mOnHeadShowTableDataListener.clickContentTextPos(pos);
                         notifyDataSetChanged();
                     }
-                    lastClickBarChartTime = currentTimeMillis;
-                }
-            });
+
+                });
+            } else if (type == SHOW_BAR_CHAR) {
+                holder.mLlTableBarChart.setVisibility(View.VISIBLE);
+                holder.mRvTableContentText.setVisibility(View.GONE);
+                holder.mTvTableBarChartText.setText(mMainData.get(position).getData().get(selectColumn).getValue());
+                float currentValue = Float.parseFloat(mMainData.get(position).getData().get(selectColumn).getValue().replace("%", ""));
+                holder.mTbcvTableBarChart.setData(selectColumnMinValue, selectColumnMaxValue, currentValue);
+                holder.mLlTableBarChart.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        long currentTimeMillis = System.currentTimeMillis();
+                        if (currentTimeMillis - lastClickBarChartTime < 1000) {
+                            type = SHOW_NUMBER;
+                            mOnHeadShowTableDataListener.showAllData();
+                            notifyDataSetChanged();
+                        }
+                        lastClickBarChartTime = currentTimeMillis;
+                    }
+                });
+            }
         }
     }
 
@@ -175,7 +179,7 @@ public class TableBodyAdapter extends RecyclerView.Adapter<TableBodyAdapter.Tabl
         });
     }
 
-    public void setBodyData(List<List<MainData>> main_data) {
+    public void setBodyData(List<MainData> main_data) {
         if (mMainData == null) {
             mMainData = new ArrayList<>();
         }
@@ -183,7 +187,7 @@ public class TableBodyAdapter extends RecyclerView.Adapter<TableBodyAdapter.Tabl
         notifyDataSetChanged();
     }
 
-    public List<List<MainData>> getAdapterData() {
+    public List<MainData> getAdapterData() {
         return mMainData;
     }
 
@@ -194,13 +198,13 @@ public class TableBodyAdapter extends RecyclerView.Adapter<TableBodyAdapter.Tabl
 
     }
 
-    public void setHeadData(List<Head> popHeads) {
-        this.mPopHeads = popHeads;
+    public void setHeadData(List<Head> currentHeads) {
+        this.mCurrentHeads = currentHeads;
         notifyDataSetChanged();
     }
 
     class TableBodyHolder extends RecyclerView.ViewHolder {
-        TextView mTvTableContentAreaName;
+        TextView mTvTableBodyKeyColumnName;
         RecyclerView mRvTableContentText;
         TableContentAdapter mTableContentAdapter;
         TextView mTvTableBarChartText;
@@ -210,7 +214,7 @@ public class TableBodyAdapter extends RecyclerView.Adapter<TableBodyAdapter.Tabl
 
         public TableBodyHolder(View itemView) {
             super(itemView);
-            mTvTableContentAreaName = itemView.findViewById(R.id.tv_table_body_area_name);
+            mTvTableBodyKeyColumnName = itemView.findViewById(R.id.tv_table_body_key_column_name);
             mRvTableContentText = itemView.findViewById(R.id.rv_table_content);
             mLlTableBarChart = itemView.findViewById(R.id.ll_table_bar_chart);
             mTvTableBarChartText = itemView.findViewById(R.id.tv_table_bar_chart_text);

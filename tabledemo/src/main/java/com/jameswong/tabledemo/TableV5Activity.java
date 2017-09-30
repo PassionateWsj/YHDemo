@@ -19,8 +19,8 @@ import android.widget.Toast;
 import com.jameswong.tabledemo.adapter.TableBodyAdapter;
 import com.jameswong.tabledemo.adapter.TableHeadAdapter;
 import com.jameswong.tabledemo.adapter.TableSelectColumnAdapter;
-import com.jameswong.tabledemo.bean.Head;
-import com.jameswong.tabledemo.bean.MainData;
+import com.jameswong.tabledemo.bean.Table.Head;
+import com.jameswong.tabledemo.bean.Table.MainData;
 import com.jameswong.tabledemo.bean.TableChart;
 import com.jameswong.tabledemo.listener.OnHeadShowTableDataListener;
 import com.jameswong.tabledemo.listener.OnStartDragListener;
@@ -80,7 +80,8 @@ public class TableV5Activity extends AppCompatActivity implements TableV5View, O
     private PopupWindow mPopupWindow;
     private TableSelectColumnAdapter mSelectColumnAdapter;
     private ItemTouchHelper mItemTouchHelper;
-    private List<Head> mPopHeads;
+    private List<Head> mCurrentHeads;
+    private int realPos;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -129,6 +130,7 @@ public class TableV5Activity extends AppCompatActivity implements TableV5View, O
         }
         if (mTableData.getTable().getMain_data().size() > 0) {
             mBodyAdapter.setBodyData(mTableData.getTable().getMain_data());
+            mBodyAdapter.setHeadData(mTableData.getTable().getHead());
         }
     }
 
@@ -152,19 +154,20 @@ public class TableV5Activity extends AppCompatActivity implements TableV5View, O
         if (mSortPos != pos && mSortPos != -1) {
             positiveSort = false;
         }
+        positiveSort = !positiveSort;
         mHeadAdapter.sortClickable(false);
-        Log.i(TAG, "解析出错，非法传参");
+
         Observable.just(pos)
                 .subscribeOn(Schedulers.newThread())
                 .map(new Func1<Integer, Boolean>() {
                     @Override
                     public Boolean call(Integer integer) {
                         if (positiveSort && mSortPos != pos) {
-                            Collections.sort(mBodyAdapter.getAdapterData(), new Comparator<List<MainData>>() {
+                            Collections.sort(mBodyAdapter.getAdapterData(), new Comparator<MainData>() {
                                 @Override
-                                public int compare(List<MainData> mainDatas, List<MainData> t1) {
-                                    String value = mainDatas.get(pos + 1).getValue().replace("%", "");
-                                    String value1 = t1.get(pos + 1).getValue().replace("%", "");
+                                public int compare(MainData mainDatas, MainData t1) {
+                                    String value = mainDatas.getData().get(pos).getValue().replace("%", "");
+                                    String value1 = t1.getData().get(pos).getValue().replace("%", "");
                                     double i;
                                     i = Double.parseDouble(value) - Double.parseDouble(value1);
                                     if (i > 0) {
@@ -215,17 +218,17 @@ public class TableV5Activity extends AppCompatActivity implements TableV5View, O
         mLlHeadContainer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                clickPos(pos - 1);
+                clickPos(pos);
             }
         });
         mTvHeadTitle.setText(mTableData.getTable().getHead().get(pos).getValue());
-        List<List<MainData>> main_data = new ArrayList();
+        List<MainData> main_data = new ArrayList();
         main_data.addAll(mTableData.getTable().getMain_data());
-        mBodyAdapter.setBarCharMaxMin(Collections.max(main_data, new Comparator<List<MainData>>() {
+        mBodyAdapter.setBarCharMaxMin(Collections.max(main_data, new Comparator<MainData>() {
                     @Override
-                    public int compare(List<MainData> mainDatas, List<MainData> t1) {
-                        String value = mainDatas.get(pos).getValue().replace("%", "");
-                        String value1 = t1.get(pos).getValue().replace("%", "");
+                    public int compare(MainData mainDatas, MainData t1) {
+                        String value = mainDatas.getData().get(pos).getValue().replace("%", "");
+                        String value1 = t1.getData().get(pos).getValue().replace("%", "");
                         double i = Double.parseDouble(value) - Double.parseDouble(value1);
 
                         if (i > 0) {
@@ -236,12 +239,12 @@ public class TableV5Activity extends AppCompatActivity implements TableV5View, O
                         }
                         return 0;
                     }
-                }).get(pos).getValue()
-                , Collections.min(main_data, new Comparator<List<MainData>>() {
+                }).getData().get(pos).getValue()
+                , Collections.min(main_data, new Comparator<MainData>() {
                     @Override
-                    public int compare(List<MainData> mainDatas, List<MainData> t1) {
-                        String value = mainDatas.get(pos).getValue().replace("%", "");
-                        String value1 = t1.get(pos).getValue().replace("%", "");
+                    public int compare(MainData mainDatas, MainData t1) {
+                        String value = mainDatas.getData().get(pos).getValue().replace("%", "");
+                        String value1 = t1.getData().get(pos).getValue().replace("%", "");
                         double i = Double.parseDouble(value) - Double.parseDouble(value1);
                         if (i > 0) {
                             return 1;
@@ -251,7 +254,7 @@ public class TableV5Activity extends AppCompatActivity implements TableV5View, O
                         }
                         return 0;
                     }
-                }).get(pos).getValue());
+                }).getData().get(pos).getValue());
     }
 
     @Override
@@ -303,10 +306,10 @@ public class TableV5Activity extends AppCompatActivity implements TableV5View, O
             case R.id.tv_select_column_confirm:
                 Toast.makeText(this, "应用", Toast.LENGTH_SHORT).show();
                 mPopupWindow.dismiss();
-                mPopHeads = mSelectColumnAdapter.getPopHeads();
-                mTvTableName.setText(mPopHeads.get(0).getValue());
-                mHeadAdapter.setHeadData(mPopHeads);
-                mBodyAdapter.setHeadData(mPopHeads);
+                mCurrentHeads = mSelectColumnAdapter.getPopHeads();
+                mTvTableName.setText(mCurrentHeads.get(0).getValue());
+                mHeadAdapter.setHeadData(mCurrentHeads);
+                mBodyAdapter.setHeadData(mCurrentHeads);
                 break;
             case R.id.btn_table_select_column_all:
                 Toast.makeText(this, "全选", Toast.LENGTH_SHORT).show();

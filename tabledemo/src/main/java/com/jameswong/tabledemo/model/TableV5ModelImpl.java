@@ -4,7 +4,7 @@ import android.content.Context;
 
 import com.google.gson.Gson;
 import com.jameswong.tabledemo.OKHttpUtils;
-import com.jameswong.tabledemo.bean.MainData;
+import com.jameswong.tabledemo.bean.Table;
 import com.jameswong.tabledemo.bean.TableChart;
 
 import java.io.BufferedReader;
@@ -116,7 +116,7 @@ public class TableV5ModelImpl implements TableV5Model {
      */
     private TableChart generateShowTableData(TableChart tableChart) {
 //        List<Head> heads = new ArrayList<>();
-        List<List<MainData>> mainDatas = new ArrayList<>();
+        List<Table.MainData> mainDatas = new ArrayList<>();
         int size = tableChart.getTable().getMain_data().size();
         int currentRowSum = 0;
         int increasingRow = size;
@@ -128,16 +128,17 @@ public class TableV5ModelImpl implements TableV5Model {
         for (int i = 0; i < increasingRow; i++) {
             k = 0;
             cut = 0;
-            for (int j = 0; j < tableChart.getTable().getMain_data().get(i).size(); j++) {
+            for (int j = 0; j < tableChart.getTable().getMain_data().get(i).getData().size(); j++) {
                 if (!tableChart.getTable().getHead().get(k).isShow()) {
-                    tableChart.getTable().getMain_data().get(i).remove(j);
+                    tableChart.getTable().getMain_data().get(i).getData().remove(j);
                     cut++;
                     j--;
-                } else {
-                    tableChart.getTable().getMain_data().get(i).get(j).setHeadIndex(j);
                 }
+//                else {
+//                    tableChart.getTable().getMain_data().get(i).get(j).setHeadIndex(j);
+//                }
                 k++;
-                if (k == tableChart.getTable().getMain_data().get(i).size()+cut) {
+                if (k == tableChart.getTable().getMain_data().get(i).getData().size() + cut) {
                     break;
                 }
             }
@@ -150,9 +151,10 @@ public class TableV5ModelImpl implements TableV5Model {
                 tableChart.getTable().getHead().remove(j);
 //                cut++;
                 j--;
-            } else {
-                tableChart.getTable().getHead().get(j).setDefaultIndex(j);
             }
+//            else {
+//                tableChart.getTable().getHead().get(j).setDefaultIndex(j);
+//            }
 //            k++;
 //            if (k == tableChart.getTable().getHead().size()+cut) {
 //                break;
@@ -183,7 +185,8 @@ public class TableV5ModelImpl implements TableV5Model {
         StringBuilder sb = null;
         try {
 //            is = getResources().getAssets().open("kpi_detaldata.json");
-            is = context.getResources().getAssets().open("temple5.json");
+//            is = context.getResources().getAssets().open("temple5.json");
+            is = context.getResources().getAssets().open("simple_temple5.json");
             reader = new BufferedReader(new InputStreamReader(is));
             sb = new StringBuilder();
             String line = null;

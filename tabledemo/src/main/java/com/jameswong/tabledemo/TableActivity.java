@@ -5,8 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.jameswong.tabledemo.bean.MainData;
 import com.jameswong.tabledemo.bean.TableChart;
+import com.jameswong.tabledemo.bean.Table.*;
 import com.kelin.scrollablepanel.library.ScrollablePanel;
 
 import java.io.IOException;
@@ -99,7 +99,7 @@ public class TableActivity extends AppCompatActivity {
      */
     private TableChart generateShowTableData(TableChart tableChart) {
 //        List<Head> heads = new ArrayList<>();
-        List<List<MainData>> mainDatas = new ArrayList<>();
+        List<MainData> mainDatas = new ArrayList<>();
         int size = tableChart.getTable().getMain_data().size();
         int currentRowSum = 0;
         int increasingRow = 1000;
@@ -107,9 +107,9 @@ public class TableActivity extends AppCompatActivity {
             currentRowSum += increasingRow;
         }
         for (int i = 0; i < currentRowSum; i++) {
-            for (int j = tableChart.getTable().getMain_data().get(i).size() - 1; j > 0 || j == 0; j--) {
+            for (int j = tableChart.getTable().getMain_data().get(i).getData().size() - 1; j > 0 || j == 0; j--) {
                 if (!tableChart.getTable().getHead().get(j).isShow()) {
-                    tableChart.getTable().getMain_data().get(i).remove(j);
+                    tableChart.getTable().getMain_data().get(i).getData().remove(j);
                 }
             }
             mainDatas.add(tableChart.getTable().getMain_data().get(i));

@@ -11,7 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.jameswong.tabledemo.R;
-import com.jameswong.tabledemo.bean.Head;
+import com.jameswong.tabledemo.bean.Table.*;
 import com.jameswong.tabledemo.listener.OnTableHeadClickListener;
 
 import java.util.ArrayList;
@@ -55,8 +55,8 @@ public class TableHeadAdapter extends RecyclerView.Adapter<TableHeadAdapter.Head
         holder.mTvHeadTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (isSortClickable) {
-                    mOnTableHeadClickListener.clickPos(position);
+                if (isSortClickable && mHeads.get(position).getDefaultIndex() != 0) {
+                    mOnTableHeadClickListener.clickPos(mHeads.get(position).getDefaultIndex());
                 } else {
                     Toast.makeText(mContext, "点太快了", Toast.LENGTH_SHORT).show();
                 }
@@ -80,7 +80,8 @@ public class TableHeadAdapter extends RecyclerView.Adapter<TableHeadAdapter.Head
         }
         notifyDataSetChanged();
     }
-    public List<Head> getAdapterData(){
+
+    public List<Head> getAdapterData() {
         return mHeads;
     }
 

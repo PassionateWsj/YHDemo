@@ -12,8 +12,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.jameswong.tabledemo.bean.Table.*;
 import com.jameswong.tabledemo.R;
-import com.jameswong.tabledemo.bean.Head;
 import com.jameswong.tabledemo.listener.ItemTouchHelperAdapter;
 import com.jameswong.tabledemo.listener.OnStartDragListener;
 

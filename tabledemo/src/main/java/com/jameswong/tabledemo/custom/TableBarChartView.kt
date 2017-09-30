@@ -44,6 +44,7 @@ class TableBarChartView : View {
                 canvas.drawRect(0f, 0f, mWidth * current, measuredHeight.toFloat(), p)
             }
             max < 0 || max == 0f -> {
+                p.color = Color.parseColor("#91c941")
                 mWidth = measuredWidth / min
                 canvas.drawRect(measuredWidth.toFloat() - mWidth * current, 0f, measuredWidth.toFloat(), measuredHeight.toFloat(), p)
             }
